@@ -1,9 +1,6 @@
 # OneDriveDownloads
 Package source to IntuneWin with the Microsoft Win32 Content Prep Tool: https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool
 
-## %OrgName%
-Make sure to modify `%OrgName%` to the OneDriveOrgName of your organization in the `Move-DownloadsFolderToOneDrive.ps1` install script and `Detect-DownloadsFolderToOneDrive.ps1` detection script.
-
 ## Package cmdlet
 IntuneWinAppUtil.exe -c 'Source' -s 'Source\Move-DownloadsFolderToOnedrive.ps1' -o 'Package'
 
