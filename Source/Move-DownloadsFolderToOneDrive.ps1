@@ -60,4 +60,4 @@ Set-KnownFolderPath -KnownFolder 'Downloads1' -Path "$oneDriveSyncPath\Downloads
 Set-KnownFolderPath -KnownFolder 'Downloads2' -Path "$oneDriveSyncPath\Downloads"
 
 # Move files from User's Profile Downloads to the OneDrive Downloads Folder
-Move-Item -Path "$($env:USERPROFILE)\Downloads\*" -Destination "$($oneDriveSyncPath)\Downloads" -Force
+Move-Item -Path "$((New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path)\*" -Destination "$($oneDriveSyncPath)\Downloads" -Force
